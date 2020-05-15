@@ -4,8 +4,19 @@
 
 @tailwind components;
 
-.btn{
-    @apply inline-block px-5 py-3 rounded-lg shadow-lg bg-blue-500 text-sm text-white uppercase tracking-wider font-semibold;
+/* Base */
+
+body {
+  @apply text-gray-700;
+}
+
+a {
+  @apply text-blue-base no-underline;
+}
+
+a:hover {
+  @apply text-blue-800 transition-colors duration-500 ease-in-out;
+}
 }
 
 .btn:hover{
