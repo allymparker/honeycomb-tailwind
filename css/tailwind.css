@@ -5,11 +5,11 @@
 @tailwind components;
 
 .btn{
-    @apply inline-block px-5 py-3 rounded-lg shadow-lg bg-indigo-500 text-sm text-white uppercase tracking-wider font-semibold;
+    @apply inline-block px-5 py-3 rounded-lg shadow-lg bg-blue-500 text-sm text-white uppercase tracking-wider font-semibold;
 }
 
 .btn:hover{
-    @apply bg-indigo-400;
+    @apply bg-blue-400;
 }
 
 .btn:focus{
@@ -17,7 +17,7 @@
 }
 
 .btn:active{
-    @apply bg-indigo-600;
+    @apply bg-blue-600;
 }
 
 @screen sm {
