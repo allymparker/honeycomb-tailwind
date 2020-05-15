@@ -17,17 +17,21 @@ a {
 a:hover {
   @apply text-blue-800 transition-colors duration-500 ease-in-out;
 }
+
+/* btn */
+.btn {
+  @apply inline-block px-5 py-3 rounded-lg shadow-lg bg-blue-500 text-sm text-white tracking-wider font-semibold;
 }
 
-.btn:hover{
+.btn:hover {
     @apply bg-blue-400;
 }
 
-.btn:focus{
+.btn:focus {
     @apply outline-none shadow-outline;
 }
 
-.btn:active{
+.btn:active {
     @apply bg-blue-600;
 }
 
