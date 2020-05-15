@@ -1,14 +1,5 @@
 module.exports = {
-  prefix: '',
-  important: false,
-  separator: ':',
   theme: {
-    screens: {
-      sm: '640px',
-      md: '768px',
-      lg: '1024px',
-      xl: '1280px',
-    },
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
@@ -92,23 +83,6 @@ module.exports = {
       '48': '12rem',
       '56': '14rem',
       '64': '16rem',
-    },
-    backgroundColor: theme => theme('colors'),
-    backgroundPosition: {
-      bottom: 'bottom',
-      center: 'center',
-      left: 'left',
-      'left-bottom': 'left bottom',
-      'left-top': 'left top',
-      right: 'right',
-      'right-bottom': 'right bottom',
-      'right-top': 'right top',
-      top: 'top',
-    },
-    backgroundSize: {
-      auto: 'auto',
-      cover: 'cover',
-      contain: 'contain',
     },
     borderColor: theme => ({
       ...theme('colors'),
