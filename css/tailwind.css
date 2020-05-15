@@ -41,6 +41,17 @@ a:hover {
     }
 }
 
+input{
+    @apply p-2 border border-gray-600 rounded-md;
+}
+
+input:invalid{
+    @apply border-red-base border-2;
+}
+
+label{
+    @apply font-semibold block mb-1;
+}
 /* Messages */
 
 .msg {
