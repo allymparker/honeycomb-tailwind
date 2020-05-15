@@ -24,21 +24,21 @@ a:hover {
 }
 
 .btn:hover {
-    @apply bg-blue-400;
+  @apply bg-blue-400;
 }
 
 .btn:focus {
-    @apply outline-none shadow-outline;
+  @apply outline-none shadow-outline;
 }
 
 .btn:active {
-    @apply bg-blue-600;
+  @apply bg-blue-600;
 }
 
 @screen sm {
-    .btn {
-        @apply text-base;
-    }
+  .btn {
+    @apply text-base;
+  }
 }
 
 input{
@@ -52,6 +52,34 @@ input:invalid{
 label{
     @apply font-semibold block mb-1;
 }
+label+p{
+    @apply text-gray-500 mb-1;
+}
+
+input[type="checkbox"]{
+    @apply rounded-sm border-2 appearance-none;
+    height: 1rem;
+    width: 1rem;
+}
+
+input[type="checkbox"]:checked{
+@apply bg-blue-600 border-blue-600;
+}
+
+input[type="checkbox"]:checked:after {
+    font-size: 1rem;
+    content: "\e625";
+    color: #fff;
+    font-family: "Redgate";
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+input[type="checkbox"] + label{
+    @apply font-normal inline-block ml-2;
+}
+
 /* Messages */
 
 .msg {
@@ -78,4 +106,12 @@ label{
 .msg-error {
   @apply border-red-base;
 }
+
+@font-face {
+ font-family:'Redgate';
+ src:url("redgate.woff");
+ font-weight:normal;
+ font-style:normal
+}
+
 @tailwind utilities;

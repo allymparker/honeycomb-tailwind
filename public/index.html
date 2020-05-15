@@ -16,6 +16,8 @@
         <p class="mt-2 text-gray-600 sm:mt-4 sm:text-xl">
           Tailwind CSS is a set of Util classes that allow you to create what you want from the atomic decisions of your design system.
         </p>
+
+        
         <div class="mt-4">
             <label class="mb-1">Form label</label>
             <p>This is the help text</p>
@@ -25,11 +27,21 @@
           <p>This is the help text</p>
           <input type="text" required placeholder="Text input">
           <p class="text-red-base mt-1">Error message goes here</p>
+          <div class="mt-4">
+            <input type="checkbox" name="choice-1" id="choice-1" value="Choice 1" checked=""> 
+            <label for="choice-1">Selected</label>
+            
+            <input type="checkbox" name="choice-2" id="choice-2" value="Choice 2"> 
+            <label for="choice-2">Unselected</label>
+            
+            <input type="checkbox" name="choice-3" id="choice-3" value="Choice 3" disabled=""> 
+            <label for="choice-3">Disabled</label>
+        </div>
         </div>
 
         <div class="mt-4">
           <a href="#" class="btn px-8">Here's an Anchor Button</a>
-      </div>
+        </div>
         <div class="mt-4">
           <div class="mt-4 msg msg-info">Here is some information you should know. <a href="#">See more</a></div>
           <div class="mt-4 msg msg-success">Here is some information you should know. <a href="#">See more</a></div>
@@ -40,9 +52,7 @@
           <div class="mt-4 msg-light msg-success">Here is some information you should know. <a href="#">See more</a></div>
           <div class="mt-4 msg-light msg-warning">Here is some information you should know. <a href="#">See more</a></div>
           <div class="mt-4 msg-light msg-error">Here is some information you should know. <a href="#">See more</a></div>
-    </div>
-    <div class="hidden lg:block lg:w-1/2 lg:relative">
-      <img class="absolute inset-0 h-full w-full object-cover object-center" src="/img/beach-work.jpg" alt="Woman workcationing on the beach">
+        </div>
     </div>
   </div>
 </body>
