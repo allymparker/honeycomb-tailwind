@@ -1,4 +1,14 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap");
+@font-face {
+	font-family: 'Redgate';
+	src:url('./redgate-icons/redgate.eot');
+	src:url('./redgate-icons/redgate.eot?#iefix') format('embedded-opentype'),
+		url('./redgate-icons/redgate.ttf') format('truetype'),
+		url('./redgate-icons/redgate.woff') format('woff'),
+		url('./redgate-icons/redgate.svg#Redgate') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
 
 @tailwind base;
 
@@ -107,11 +117,6 @@ input[type="checkbox"] + label{
   @apply border-red-base;
 }
 
-@font-face {
- font-family:'Redgate';
- src:url("redgate.woff");
- font-weight:normal;
- font-style:normal
-}
+
 
 @tailwind utilities;
