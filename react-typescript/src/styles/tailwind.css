@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap");
+
+@tailwind base;
+
+@tailwind components;
+
+/* Base */
+
+body {
+  @apply text-gray-700;
+}
+
+a {
+  @apply text-blue-base no-underline;
+}
+
+a:hover {
+  @apply text-blue-800 transition-colors duration-500 ease-in-out;
+}
+
+/* btn */
+.btn {
+  @apply inline-block px-5 py-3 rounded-lg shadow-lg bg-blue-500 text-sm text-white tracking-wider font-semibold;
+}
+
+.btn:hover {
+  @apply bg-blue-400;
+}
+
+.btn:focus {
+  @apply outline-none shadow-outline;
+}
+
+.btn:active {
+  @apply bg-blue-600;
+}
+
+@screen sm {
+  .btn {
+    @apply text-base;
+  }
+}
+
+input{
+    @apply p-2 border border-gray-600 rounded-md;
+}
+
+input:invalid{
+    @apply border-red-base border-2;
+}
+
+label{
+    @apply font-semibold block mb-1;
+}
+label+p{
+    @apply text-gray-500 mb-1;
+}
+
+input[type="checkbox"]{
+    @apply rounded-sm border-2 appearance-none;
+    height: 1rem;
+    width: 1rem;
+}
+
+input[type="checkbox"]:checked{
+@apply bg-blue-600 border-blue-600;
+}
+
+input[type="checkbox"]:checked:after {
+    font-size: 1rem;
+    content: "\e625";
+    color: #fff;
+    font-family: "Redgate";
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+input[type="checkbox"] + label{
+    @apply font-normal inline-block ml-2;
+}
+
+/* Messages */
+
+.msg {
+  @apply py-4 px-8 bg-gray-200;
+  border-left-width: .625rem;
+}
+
+.msg-light{
+    @apply msg bg-white border-t border-r border-b;
+}
+
+.msg-info {
+  @apply border-blue-base;
+}
+
+.msg-success {
+  @apply border-green-base;
+}
+
+.msg-warning {
+  @apply border-orange-base;
+}
+
+.msg-error {
+  @apply border-red-base;
+}
+
+@font-face {
+ font-family:'Redgate';
+ src:url("redgate.woff");
+ font-weight:normal;
+ font-style:normal
+}
+
+@tailwind utilities;
